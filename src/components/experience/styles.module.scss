@@ -1,0 +1,52 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.experience {
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    > div {
+      @include onMobile {
+        flex-direction: column;
+        gap: 0;
+      }
+
+      display: flex;
+      gap: 16px;
+
+      > span {
+        @include onMobile {
+          flex: unset;
+        }
+
+        flex: 0 0 140px;
+
+        color: $gray-color;
+
+        font-weight: 600;
+        line-height: 150%;
+      }
+
+      > div {
+        > h4 {
+          color: $secondary-color;
+
+          font-weight: 600;
+          line-height: 150%;
+        }
+
+        > ul {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+
+          color: $secondary-color;
+
+          line-height: 150%;
+        }
+      }
+    }
+  }
+}

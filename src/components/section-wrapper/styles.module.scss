@@ -1,0 +1,20 @@
+@import "../../styles/variables.scss";
+
+.sectionWrapper {
+  > h3 {
+    color: $secondary-color;
+
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  > hr {
+    height: 1px;
+    margin: 16px 0 24px;
+
+    display: flex;
+    margin-left: auto;
+
+    background-color: rgba(131, 29, 64, 0.2);
+  }
+}

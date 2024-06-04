@@ -1,0 +1,12 @@
+@import "./variables.scss";
+
+@mixin container {
+  box-sizing: content-box;
+  max-width: $max-width;
+}
+
+@mixin onMobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}

@@ -1,0 +1,53 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.header {
+  @include onMobile {
+    padding: 24px 32px;
+  }
+
+  padding: 24px 64px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: rgba(131, 29, 64, 0.05);
+
+  &_inner {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > h1 {
+      color: $primary-color;
+
+      font-size: 28px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    nav {
+      @include onMobile {
+        display: none;
+      }
+
+      ul {
+        display: flex;
+        gap: 24px;
+
+        a {
+          color: $secondary-color;
+
+          font-size: 16px;
+          font-weight: 600;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

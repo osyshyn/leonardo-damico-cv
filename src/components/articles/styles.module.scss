@@ -1,0 +1,36 @@
+@import "../../styles/variables.scss";
+
+.workingPapers {
+  > div {
+    > h4 {
+      color: $secondary-color;
+      font-weight: 600;
+      line-height: 150%;
+
+      &:not(:first-child) {
+        margin-top: 16px;
+      }
+
+      > span {
+        color: $gray-color;
+
+        font-weight: 300;
+      }
+
+      > a {
+        color: $link-color;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    > p {
+      margin-top: 8px;
+
+      color: $gray-color;
+      line-height: 150%;
+    }
+  }
+}

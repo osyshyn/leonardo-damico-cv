@@ -1,0 +1,21 @@
+@import "../../styles/variables.scss";
+
+.additionalInformation {
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    > p {
+      color: $gray-color;
+
+      line-height: 150%;
+
+      > span {
+        color: $secondary-color;
+
+        font-weight: 600;
+      }
+    }
+  }
+}

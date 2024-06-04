@@ -1,0 +1,43 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.contactInformation {
+  @include onMobile {
+    gap: 8px;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  > img {
+    min-width: 280px;
+    height: 280px;
+
+    object-fit: cover;
+    object-position: top;
+
+    border-radius: 16px;
+  }
+
+  > h4 {
+    color: $primary-color;
+
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  > a {
+    display: block;
+
+    color: $secondary-color;
+
+    line-height: 150%;
+    font-weight: 400;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
