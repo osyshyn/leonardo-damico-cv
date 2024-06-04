@@ -2,7 +2,7 @@
   "name": "damico",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://vmamchur.github.io/damico/",
+  "homepage": "https://osyshyn.github.io/damico/",
   "type": "module",
   "scripts": {
     "dev": "vite",
