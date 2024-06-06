@@ -1,0 +1,9 @@
+@import '../../styles/mixins.scss';
+
+.container {
+  @include onMobile {
+    padding: 24px 32px;
+  }
+
+  padding: 45px 64px 38px;
+}

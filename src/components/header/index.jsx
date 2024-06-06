@@ -1,3 +1,4 @@
+import { HashLink as Link } from "react-router-hash-link";
 import convertTitleToId from "../../helpers/convertTitleToId";
 import styles from "./styles.module.scss";
 
@@ -6,7 +7,6 @@ const NAVIGATION_TITLES = [
   "Policy Articles",
   "Professional and Teaching Experience",
   "Additional Information",
-  "Other",
 ];
 
 const Header = () => {
@@ -21,10 +21,13 @@ const Header = () => {
 
               return (
                 <li key={id}>
-                  <a href={`#${id}`}>{title}</a>
+                  <Link to={`/#${id}`}>{title}</Link>
                 </li>
               );
             })}
+            <li>
+              <Link to="/other">Other</Link>
+            </li>
           </ul>
         </nav>
       </div>
